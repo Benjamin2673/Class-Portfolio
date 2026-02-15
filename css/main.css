@@ -1,0 +1,24 @@
+.profile-pic {
+    width: 200px;
+    
+}
+
+nav{
+    margin-bottom: 3em;
+}
+
+nav > div{
+    max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+    .profile-section{
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .profile-pic {
+        margin-right: 3rem;
+    }
+}
