@@ -1,6 +1,29 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #17171b;
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
 .profile-pic {
     width: 200px;
     
+}
+
+.portfolio-carousel{
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.portfolio-carousel > .carousel-item > img{
+    margin: auto;
 }
 
 nav{
@@ -8,12 +31,120 @@ nav{
 }
 
 nav > div{
+    padding-bottom: 1em;
+    border-bottom: 1px white solid;
+    max-width: 1400px;
+}
+
+.about-section{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-section > div{
+    width: 100%;
+    margin: auto;
+    justify-self: center;
+}
+
+.portfolio-title{
+    font-weight: bold;
+    text-align: center;
+    margin: 1em;
+}
+
+.portfolio-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     max-width: 1200px;
+    flex-direction: column;
+}
+
+.big-project-card{
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.project-text{
+    margin-left: 1em;
+    max-width: 300px;
+}
+
+.project-card{
+    margin: auto;
+    max-width: 1200px;
+}
+
+.mini-pic{
+    height: 50%;
+    margin-top: 1em;
+}
+
+.mini-pic > img{
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.portfolio-carousel{
+    margin-bottom: 5em;
+}
+
+.project-description{
+    margin-top: 2em;
+    margin-left: 3em;
+}
+
+footer{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+    border-top: 1px white solid;
+    margin-top: 5em;
+    max-width: 1400px;
+}
+
+footer > div > a{
+    color: rgb(207, 16, 48);
 }
 
 @media (max-width: 768px) {
     .profile-section{
         text-align: center;
+    }
+    .big-project-card{
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        overflow: hidden;
+        text-align: center;
+        justify-content: center;
+        margin: 0 1em;
+    }
+    .big-project-card > img{
+        width: 100%;
+    }
+    .big-project-card > .project-text{
+        margin: auto;
+        margin-top: 1em;
+    }
+    .project-card{
+        margin: auto;
+        justify-content: center;
+    }
+
+    .big-pic{
+        margin: auto;
+    }
+
+    .big-pic > img{
+        max-width: 80vw;
     }
 }
 
