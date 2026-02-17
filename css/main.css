@@ -139,11 +139,15 @@ footer > div > a{
     }
 
     .big-pic{
+        display: flex;
         margin: auto;
+        width: 100%;
+        justify-content: center;
     }
 
     .big-pic > img{
         max-width: 80vw;
+        margin: 0 auto;
     }
 }
 
