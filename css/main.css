@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     background-color: #17171b;
     color: white;
+    height: 100%;
 }
 
 a{
@@ -11,7 +12,8 @@ a{
 }
 .profile-pic {
     width: 200px;
-    
+    height: 200px;
+    aspect-ratio: 1/1;
 }
 
 .portfolio-carousel{
